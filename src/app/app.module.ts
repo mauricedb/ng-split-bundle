@@ -6,7 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
-import {MoviesModule} from './movies/movies.module';
+import { MoviesModule } from './movies/movies.module';
+import { DirectorsModule } from './directors/directors.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MoviesModule} from './movies/movies.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MoviesModule
+    MoviesModule,
+    DirectorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
