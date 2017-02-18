@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MoviesComponent } from './movies/movies.component';
+import { MovieComponent } from './movie/movie.component';
+import { GenreComponent } from './genre/genre.component';
 
 @NgModule({
   imports: [
@@ -9,6 +11,6 @@ import { MoviesComponent } from './movies/movies.component';
   exports:[
     MoviesComponent
   ],
-  declarations: [MoviesComponent]
+  declarations: [MoviesComponent, MovieComponent, GenreComponent]
 })
 export class MoviesModule { }
