@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DirectorsComponent } from './directors/directors.component';
 
 const routes: Routes = [
-  { path: 'directors', component: DirectorsComponent },
+  { path: '', component: DirectorsComponent },
 ];
 
 @NgModule({

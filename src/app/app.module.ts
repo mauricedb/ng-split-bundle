@@ -2,15 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
-import { MoviesModule } from './movies/movies.module';
-import { DirectorsModule } from './directors/directors.module';
+// import { MoviesModule } from './movies/movies.module';
+// import { DirectorsModule } from './directors/directors.module';
 
-const routerModule = RouterModule.forRoot([]);
+const routes: Routes = [
+  {
+    path: 'movies',
+              //  '.\movies\movies.module.ts'
+    loadChildren: './movies/movies.module#MoviesModule'
+  }, {
+    path: 'directors',
+    loadChildren: './directors/directors.module#DirectorsModule'
+  },
+];
+const routerModule = RouterModule.forRoot(routes);
 
 @NgModule({
   declarations: [
@@ -21,9 +31,9 @@ const routerModule = RouterModule.forRoot([]);
     BrowserModule,
     FormsModule,
     HttpModule,
-    routerModule,
-    MoviesModule,
-    DirectorsModule
+    routerModule
+    // MoviesModule,
+    // DirectorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
