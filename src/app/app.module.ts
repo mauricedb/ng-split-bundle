@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 const routes: Routes = [
   {
     path: 'movies',
-              //  '.\movies\movies.module.ts'
     loadChildren: './movies/movies.module#MoviesModule'
   }, {
     path: 'directors',
