@@ -7,17 +7,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
-// import { MoviesModule } from './movies/movies.module';
-// import { DirectorsModule } from './directors/directors.module';
+import { MoviesModule } from './movies/movies.module';
+import { DirectorsModule } from './directors/directors.module';
 
 const routes: Routes = [
-  {
-    path: 'movies',
-    loadChildren: './movies/movies.module#MoviesModule'
-  }, {
-    path: 'directors',
-    loadChildren: './directors/directors.module#DirectorsModule'
-  },
+  // {
+  //   path: 'movies',
+  //   loadChildren: './movies/movies.module#MoviesModule'
+  // }, {
+  //   path: 'directors',
+  //   loadChildren: './directors/directors.module#DirectorsModule'
+  // },
 ];
 const routerModule = RouterModule.forRoot(routes);
 
@@ -30,9 +30,9 @@ const routerModule = RouterModule.forRoot(routes);
     BrowserModule,
     FormsModule,
     HttpModule,
-    routerModule
-    // MoviesModule,
-    // DirectorsModule
+    routerModule,
+    MoviesModule,
+    DirectorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
