@@ -30,7 +30,7 @@ const routerModule = RouterModule.forRoot(routes);
     BrowserModule,
     FormsModule,
     HttpModule,
-    routerModule
+    routerModule,
     // MoviesModule,
     // DirectorsModule
   ],

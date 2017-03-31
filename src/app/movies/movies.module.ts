@@ -6,7 +6,10 @@ import { MovieComponent } from './movie/movie.component';
 import { GenreComponent } from './genre/genre.component';
 
 const routes: Routes = [
-  { path: '', component: MoviesComponent },
+  { 
+    path: '', 
+    component: MoviesComponent 
+  },
 ];
 
 @NgModule({
