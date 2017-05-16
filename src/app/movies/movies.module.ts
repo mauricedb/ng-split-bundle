@@ -7,7 +7,7 @@ import { GenreComponent } from './genre/genre.component';
 
 const routes: Routes = [
   { 
-    path: '', 
+    path: 'movies', 
     component: MoviesComponent 
   },
 ];
