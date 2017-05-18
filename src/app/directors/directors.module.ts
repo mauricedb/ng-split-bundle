@@ -5,7 +5,7 @@ import { DirectorsComponent } from './directors/directors.component';
 
 const routes: Routes = [
   { 
-    path: 'directors', 
+    path: '', 
     component: DirectorsComponent 
   },
 ];
