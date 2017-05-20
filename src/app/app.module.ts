@@ -7,15 +7,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
-// import { MoviesModule } from './movies/movies.module';
-// import { DirectorsModule } from './directors/directors.module';
+// import { MoviesModule, MoviesComponent } from './movies/movies.module';
+// import { DirectorsModule, DirectorsComponent } from './directors/directors.module';
 
 const routes: Routes = [
   {
     path: 'movies',
+    // component: MoviesComponent 
     loadChildren: './movies/movies.module#MoviesModule'
   }, {
     path: 'directors',
+    // component: DirectorsComponent
     loadChildren: './directors/directors.module#DirectorsModule'
   },
 ];
